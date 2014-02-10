@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff"> 
+    
+    <!-- Row 1 with single column -->
+    <TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center_horizontal"
+        android:background="#b0b0b0">  
+        <TextView 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="18sp" android:text="@string/row1col1"  android:layout_span="2"
+            android:padding="18dip" 
+            android:textColor="#000"/> 
+        <ImageButton android:id="@+id/action_row1"
+            android:clickable="true"
+             android:contentDescription="@string/content_row1"
+             android:src="@drawable/ic_action_next_item"
+             style="?android:borderlessButtonStyle"
+             android:layout_span="2"
+             android:onClick="onRow1Clicked"/>
+    </TableRow>  
+    
+    <TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center_horizontal"
+        android:background="#b0b0b0">  
+        <TextView 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="18sp" android:text="@string/row2col1"  android:layout_span="2"
+            android:padding="18dip" 
+            android:textColor="#000"/> 
+        <ImageButton android:id="@+id/action_row2"
+			android:contentDescription="@string/content_row2"
+			android:src="@drawable/ic_action_next_item"
+			style="?android:borderlessButtonStyle"
+			android:layout_span="2"/>
+    </TableRow>  
+    
+    <TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center_horizontal"
+        android:background="#b0b0b0">  
+        <TextView 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="18sp" android:text="@string/row3col1"  android:layout_span="2"
+            android:padding="18dip" android:background="#b0b0b0"
+            android:textColor="#000"/> 
+   
+		<ToggleButton 
+		    android:id="@+id/lock_toggle"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_span="2"
+		    android:textOn="On"
+		    android:textOff="Off"
+		    android:onClick="onToggleClicked"/>
+          
+    </TableRow>
+
+    
+</TableLayout>
