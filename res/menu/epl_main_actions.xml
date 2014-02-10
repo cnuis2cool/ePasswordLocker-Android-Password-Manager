@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- Search / will display always -->
+    <item android:id="@+id/action_search"
+          android:icon="@drawable/ic_action_search"
+          android:title="@string/action_search"
+          android:showAsAction="ifRoom"/>
+     
+     
+    <!-- Settings -->
+    <item android:id="@+id/action_settings"
+          android:icon="@drawable/ic_action_settings"
+          android:title="@string/action_settings"
+          android:showAsAction="ifRoom"/>
+     
+    <!-- Exit -->
+    <item android:id="@+id/action_check_exit"
+          android:icon="@drawable/ic_action_remove"
+          android:title="@string/action_exit"
+          android:showAsAction="ifRoom" />
+</menu>
