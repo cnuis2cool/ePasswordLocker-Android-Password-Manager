@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+ 
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg"
+        android:layout_marginRight="5dip">
+ 
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/adele"/>
+ 
+    </LinearLayout>
+ 
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Rihanna Love the way lie"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+
+ 
+     <!-- Rightend Arrow -->
+	<LinearLayout android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/image_bg"
+        android:layout_marginRight="5dip">
+ 
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/adele"/>
+ 
+    </LinearLayout>
+ 
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:padding="3dip">
+
+    
+<View
+  android:layout_width="1dp"
+  android:layout_height="70dp">
+</View>
+        
+<TableLayout
+    android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff">
+    
+<!-- Row 1 with single column -->
+    <TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center_horizontal"
+        android:background="#b0b0b0">  
+        <TextView 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="18sp" android:text="@string/cat_row1col1"  android:layout_span="3"
+            android:padding="18dip" 
+            android:textColor="#000"/> 
+         <TextView 
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:textSize="18sp" android:text="0"  android:layout_span="3"
+            android:padding="18dip" 
+            android:textColor="#000"/> 
+        <ImageButton android:id="@+id/cat_action_row1"
+             android:contentDescription="@string/cat_content_row1"
+             android:src="@drawable/ic_action_next_item"
+             style="?android:borderlessButtonStyle"
+             android:layout_span="3"/>
+    </TableRow>  
+    
+    <TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center_horizontal"
+        android:background="#b0b0b0">  
+        <TextView 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="18sp" android:text="@string/cat_row2col1"  android:layout_span="3"
+            android:padding="18dip" 
+            android:textColor="#000"/> 
+         <TextView 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="18sp" android:text="0"  android:layout_span="3"
+            android:padding="18dip" 
+            android:textColor="#000"/>     
+        <ImageButton android:id="@+id/cat_action_row2"
+			android:contentDescription="@string/cat_content_row2"
+			android:src="@drawable/ic_action_next_item"
+			style="?android:borderlessButtonStyle"
+			android:layout_span="3"/>
+    </TableRow>  
+    
+    <TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent" 
+        android:gravity="center_horizontal"
+        android:background="#b0b0b0">  
+        <TextView 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="18sp" android:text="@string/cat_row3col1"  android:layout_span="3"
+            android:padding="18dip" android:background="#b0b0b0"
+            android:textColor="#000"/>
+        <TextView 
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="18sp" android:text="0"  android:layout_span="3"
+            android:padding="18dip" android:background="#b0b0b0"
+            android:textColor="#000"/> 
+   
+		<ImageButton android:id="@+id/cat_action_row3"
+			android:contentDescription="@string/cat_content_row3"
+			android:src="@drawable/ic_action_next_item"
+			style="?android:borderlessButtonStyle"
+			android:layout_span="3"/>
+          
+    </TableRow>
+
+
+
+</TableLayout>
+
+</LinearLayout> 
+</RelativeLayout>
