@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ePasswordLocker</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string-array name="main_table_rows"></string-array>
+    <string name="action_exit">Exit</string>
+    <string name="action_search">Search</string>
+    
+    <string name="row1col1">Favorites</string>
+    <string name="row2col1">Categories</string>
+    <string name="row3col1">Lock</string>
+    <string name="content_row1">Favorites</string>
+    <string name="content_row2">Categories</string>
+    
+    <string name="cat_row1col1">e-Banking</string>
+    <string name="cat_row2col1">e-Shop</string>
+    <string name="cat_row3col1">e-Mail</string>
+        
+    <string name="cat_content_row1">e-Banking</string>
+    <string name="cat_content_row2">e-Shop</string>
+    <string name="cat_content_row3">e-Mail</string>
+
+</resources>
